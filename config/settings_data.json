@@ -9,8 +9,10 @@
  */
 {
   "current": {
-    "logo_height": 36,
-    "logo_height_mobile": 28,
+    "logo": "shopify://shop_images/logo-neura-details.png",
+    "logo_height": 65,
+    "logo_height_mobile": 45,
+    "favicon": "shopify://shop_images/icon-neura-details.png",
     "type_body_font": "instrument_sans_n4",
     "type_subheading_font": "instrument_sans_n4",
     "type_heading_font": "instrument_serif_n4",
