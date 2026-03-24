@@ -16,14 +16,14 @@
           "type": "group",
           "name": "t:names.group",
           "settings": {
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
+            "gap": 32,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -52,32 +52,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_NayFBJ": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p>Creamos cosas que funcionan mejor y duran más. Nuestros productos resuelven problemas reales con un diseño limpio y materiales honestos.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "image_cVeHwV": {
               "type": "image",
               "name": "t:names.image",
@@ -85,7 +59,7 @@
                 "image": "shopify://shop_images/500.svg",
                 "link": "",
                 "image_ratio": "adapt",
-                "width": "fill",
+                "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
@@ -100,18 +74,115 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "group_4xXcHd": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_aqfeBt": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h1>¿Quién soy?</h1>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_GtGfqM": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Soy una joven de 28 años, creativa por naturaleza y apasionada de los pequeños detalles.</p><p>Siempre he disfrutado más regalando que recibiendo, porque creo que no hay nada más bonito que ver la emoción en la cara de alguien cuando se siente especial.<br/><br/>Neura nace del cariño, del mimo y de esas ganas constantes de sorprender. De los pequeños gestos que marcan la diferencia, de los abrazos inesperados y de las sonrisas sinceras.<br/><br/>Este proyecto es un pedacito de mí. Una nueva etapa, una nueva visión y muchas ganas de crear cosas que no dejen indiferente a nadie.<br/><br/>Cada detalle que diseño está pensado para emocionar, para contar una historia y para convertir momentos especiales en recuerdos inolvidables.<br/><br/>Bienvenidos a Neura 🤍<br/><br/>¿Estás preparado para sorprender?</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_aqfeBt",
+                "text_GtGfqM"
+              ]
             }
           },
           "block_order": [
-            "text_NayFBJ",
-            "image_cVeHwV"
+            "image_cVeHwV",
+            "group_4xXcHd"
           ]
         }
       },
       "block_order": [
         "group_PE4A4X"
       ],
-      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -231,32 +302,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_GB7KFV": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>¿Quién soy?</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 16,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_wgBidx": {
               "type": "text",
               "name": "t:names.description",
@@ -285,7 +330,6 @@
             }
           },
           "block_order": [
-            "text_GB7KFV",
             "text_wgBidx"
           ]
         }
