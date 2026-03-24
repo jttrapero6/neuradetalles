@@ -52,6 +52,32 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_NayFBJ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Creamos cosas que funcionan mejor y duran más. Nuestros productos resuelven problemas reales con un diseño limpio y materiales honestos.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "image_cVeHwV": {
               "type": "image",
               "name": "t:names.image",
@@ -77,6 +103,7 @@
             }
           },
           "block_order": [
+            "text_NayFBJ",
             "image_cVeHwV"
           ]
         }
@@ -267,6 +294,7 @@
         "group_rFJQJa",
         "group_dV6hwG"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
