@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "section": {
       "type": "section",
@@ -30,7 +31,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 32,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -80,11 +81,11 @@
               "type": "contact-form-submit-button",
               "static": true,
               "settings": {
-                "label": "Send",
+                "label": "Enviar",
                 "style_class": "button",
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
+                "width_mobile": "custom",
                 "custom_width_mobile": 100
               },
               "blocks": {}
@@ -110,7 +111,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-a899fd56-c0b3-4c6c-bb8d-c47d4e8054de",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
