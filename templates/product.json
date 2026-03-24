@@ -12,10 +12,6 @@
     "main": {
       "type": "product-information",
       "blocks": {
-        "globo_product_options_app_block_Ah3Mbb": {
-          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {}
-        },
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
@@ -132,10 +128,6 @@
               },
               "blocks": {}
             },
-            "globo_product_options_app_block_XjGm9B": {
-              "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-              "settings": {}
-            },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
               "settings": {
@@ -215,16 +207,12 @@
             "text_GnyQiN",
             "reviews",
             "price_a7krng",
-            "globo_product_options_app_block_XjGm9B",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "product_description_LfDYCg"
           ]
         }
       },
-      "block_order": [
-        "globo_product_options_app_block_Ah3Mbb"
-      ],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
