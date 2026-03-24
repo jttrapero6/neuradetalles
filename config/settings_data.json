@@ -362,7 +362,7 @@
           "foreground_heading": "#000000",
           "foreground": "#000000",
           "primary": "#000000",
-          "primary_hover": "#bb81809c",
+          "primary_hover": "#000000",
           "border": "#000000",
           "shadow": "#000000",
           "primary_button_background": "#bb8180",
