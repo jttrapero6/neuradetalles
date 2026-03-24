@@ -69,9 +69,9 @@
                 "width": "fill",
                 "custom_width": 100,
                 "inherit_color_scheme": true,
+                "color_scheme": "scheme-4",
                 "heading": "",
                 "heading_preset": "h3",
-                "color_scheme": "scheme-4",
                 "border_style": "all",
                 "border_width": 0,
                 "border_radius": 100,
@@ -213,7 +213,7 @@
             "text_jBr8nr": {
               "type": "text",
               "settings": {
-                "text": "<p>Stay Connected</p>",
+                "text": "<p>Síguenos</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -239,11 +239,11 @@
               "type": "social-links",
               "name": "t:names.social_media_links",
               "settings": {
-                "facebook_url": "https://facebook.com",
-                "instagram_url": "https://instagram.com",
+                "facebook_url": "",
+                "instagram_url": "https://instagram.com/neura_details",
                 "youtube_url": "",
-                "tiktok_url": "https://tiktok.com",
-                "twitter_url": "https://x.com",
+                "tiktok_url": "",
+                "twitter_url": "",
                 "threads_url": "",
                 "linkedin_url": "",
                 "bluesky_url": "",
@@ -283,7 +283,7 @@
         "copyright": {
           "type": "footer-copyright",
           "settings": {
-            "show_powered_by": true,
+            "show_powered_by": false,
             "font_size": "0.75rem",
             "case": "none"
           },
@@ -305,10 +305,10 @@
       ],
       "settings": {
         "section_width": "page-width",
-        "gap": 24,
-        "divider_thickness": 1,
-        "color_scheme": "scheme-3",
-        "padding-block-start": 20,
+        "gap": 15,
+        "divider_thickness": 0,
+        "color_scheme": "scheme-96f2108f-f4d9-41d6-ad2a-e8654b39027a",
+        "padding-block-start": 18,
         "padding-block-end": 18
       }
     }
