@@ -11,43 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "page-content": {
-          "type": "page-content",
-          "settings": {},
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "page-content"
-      ],
       "disabled": true,
       "settings": {
         "content_direction": "column",
@@ -57,78 +20,165 @@
         "padding-block-end": 32
       }
     },
-    "section_xXbTUh": {
+    "section_NbqzPc": {
       "type": "section",
       "blocks": {
-        "text_hPYEkC": {
-          "type": "text",
-          "name": "t:names.heading",
+        "group_rFJQJa": {
+          "type": "group",
+          "name": "t:names.column",
           "settings": {
-            "text": "<h2>¿Quién soy?</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "text_rdbXyq": {
-          "type": "text",
-          "name": "t:names.text",
+        "group_dV6hwG": {
+          "type": "group",
+          "name": "t:names.column",
           "settings": {
-            "text": "<p>Soy una joven de 28 años, creativa por naturaleza y apasionada de los pequeños detalles.<br/>Siempre he disfrutado más regalando que recibiendo, porque creo que no hay nada más bonito que ver la emoción en la cara de alguien cuando se siente especial.<br/><br/>Neura nace del cariño, del mimo y de esas ganas constantes de sorprender.<br/>De los pequeños gestos que marcan la diferencia, de los abrazos inesperados y de las sonrisas sinceras.<br/><br/>Este proyecto es un pedacito de mí.<br/>Una nueva etapa, una nueva visión y muchas ganas de crear cosas que no dejen indiferente a nadie.<br/><br/>Cada detalle que diseño está pensado para emocionar, para contar una historia y para convertir momentos especiales en recuerdos inolvidables.<br/><br/>Bienvenidos a Neura 🤍<br/>¿Estás preparado para sorprender?</p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "text_GB7KFV": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>¿Quién soy?</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_wgBidx": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "text": "<p>Soy una joven de 28 años, creativa por naturaleza y apasionada de los pequeños detalles.<br/>Siempre he disfrutado más regalando que recibiendo, porque creo que no hay nada más bonito que ver la emoción en la cara de alguien cuando se siente especial.<br/><br/>Neura nace del cariño, del mimo y de esas ganas constantes de sorprender.<br/>De los pequeños gestos que marcan la diferencia, de los abrazos inesperados y de las sonrisas sinceras.<br/><br/>Este proyecto es un pedacito de mí.<br/>Una nueva etapa, una nueva visión y muchas ganas de crear cosas que no dejen indiferente a nadie.<br/><br/>Cada detalle que diseño está pensado para emocionar, para contar una historia y para convertir momentos especiales en recuerdos inolvidables.<br/><br/>Bienvenidos a Neura 🤍<br/>¿Estás preparado para sorprender?</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_GB7KFV",
+            "text_wgBidx"
+          ]
         }
       },
       "block_order": [
-        "text_hPYEkC",
-        "text_rdbXyq"
+        "group_rFJQJa",
+        "group_dV6hwG"
       ],
-      "name": "t:names.rich_text_section",
+      "name": "t:names.multicolumn",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 32,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "",
         "background_media": "none",
@@ -142,13 +192,13 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 32
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     }
   },
   "order": [
     "main",
-    "section_xXbTUh"
+    "section_NbqzPc"
   ]
 }
