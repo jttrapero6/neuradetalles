@@ -161,8 +161,8 @@
               "name": "t:names.description",
               "settings": {
                 "text": "<p>Soy una joven de 28 años, creativa por naturaleza y apasionada de los pequeños detalles.</p><p>Siempre he disfrutado más regalando que recibiendo, porque creo que no hay nada más bonito que ver la emoción en la cara de alguien cuando se siente especial.<br/><br/>Neura nace del cariño, del mimo y de esas ganas constantes de sorprender. De los pequeños gestos que marcan la diferencia, de los abrazos inesperados y de las sonrisas sinceras.<br/><br/>Este proyecto es un pedacito de mí.Una nueva etapa, una nueva visión y muchas ganas de crear cosas que no dejen indiferente a nadie.<br/><br/>Cada detalle que diseño está pensado para emocionar, para contar una historia y para convertir momentos especiales en recuerdos inolvidables.<br/><br/>Bienvenidos a Neura 🤍<br/><br/>¿Estás preparado para sorprender?</p>",
-                "width": "100%",
-                "max_width": "normal",
+                "width": "fit-content",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
