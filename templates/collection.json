@@ -281,9 +281,9 @@
             "background": true,
             "background_color": "#ede8e0",
             "corner_radius": 8,
-            "padding-block-start": 16,
-            "padding-block-end": 16,
-            "padding-inline-start": 16,
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
             "padding-inline-end": 16
           },
           "blocks": {}
