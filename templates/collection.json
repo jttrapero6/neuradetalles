@@ -175,7 +175,10 @@
           "dulces-personalizados",
           "accesorios-personalizados",
           "regalos-aniversario",
-          "regalos-personalizados-bebe"
+          "regalos-personalizados-bebe",
+          "regalos-boda-personalizados",
+          "regalos-cumpleanos-personalizados",
+          "tazas-personalizadas"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
