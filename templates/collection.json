@@ -168,7 +168,15 @@
       },
       "name": "t:names.collections_carousel",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "regalos-personalizados",
+          "papeleria-personalizada",
+          "packs-regalo-personalizados",
+          "dulces-personalizados",
+          "accesorios-personalizados",
+          "regalos-aniversario",
+          "regalos-personalizados-bebe"
+        ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 3,
