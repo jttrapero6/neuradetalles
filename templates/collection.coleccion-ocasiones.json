@@ -172,12 +172,7 @@
           "regalos-cumpleanos-personalizados",
           "regalos-personalizados-bebe",
           "regalos-boda-personalizados",
-          "regalos-aniversario",
-          "tazas-personalizadas",
-          "dulces-personalizados",
-          "packs-regalo-personalizados",
-          "papeleria-personalizada",
-          "accesorios-personalizados"
+          "regalos-aniversario"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
