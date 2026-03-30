@@ -17,7 +17,7 @@
           "static": true,
           "settings": {
             "media_presentation": "grid",
-            "media_columns": "two",
+            "media_columns": "one",
             "image_gap": 12,
             "large_first_image": true,
             "icons_style": "chevron",
@@ -220,8 +220,8 @@
         "limit_details_width": false,
         "gap": 48,
         "enable_sticky_add_to_cart": true,
-        "color_scheme": "",
-        "padding-block-start": 0,
+        "color_scheme": "scheme-a899fd56-c0b3-4c6c-bb8d-c47d4e8054de",
+        "padding-block-start": 32,
         "padding-block-end": 32
       }
     },

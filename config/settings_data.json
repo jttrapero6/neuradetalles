@@ -27,6 +27,7 @@
     "type_size_h5": "18",
     "type_case_h6": "none",
     "page_width": "normal",
+    "transition_to_main_product": true,
     "secondary_button_border_width": 0,
     "cart_type": "drawer",
     "empty_cart_button_link": "shopify://collections",
