@@ -226,16 +226,16 @@
                 "accordion_row_9JAiXW": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Política de devoluciones",
+                    "heading": "¿Qué incluye?",
                     "open_by_default": false,
-                    "icon": "arrow",
+                    "icon": "box",
                     "width": 20
                   },
                   "blocks": {
                     "text_wgEbPJ": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Nuestro objetivo es que cada cliente quede totalmente satisfecho con su compra. Si no es así, cuéntanoslo y haremos todo lo posible para solucionarlo.</p>",
+                        "text": "{{ closest.product.metafields.custom.contenido_del_producto | metafield_tag }}",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
