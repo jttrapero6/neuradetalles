@@ -247,7 +247,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Make Your Workspace Yours</h3>",
+                "text": "<h2>Nuestros detalles</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
