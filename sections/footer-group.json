@@ -14,66 +14,103 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "menu_8tJbUk": {
-          "type": "menu",
+        "group_krqnLD": {
+          "type": "group",
+          "name": "t:names.group",
           "settings": {
-            "menu": "footer",
-            "heading": "Shop",
-            "menu_spacing": 12,
-            "show_as_accordion": false,
-            "accordion_icon": "caret",
-            "accordion_dividers": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "heading_preset": "h3",
-            "link_preset": "paragraph",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
-        },
-        "menu_jRmAQi": {
-          "type": "menu",
-          "settings": {
-            "menu": "",
-            "heading": "Help",
-            "menu_spacing": 12,
-            "show_as_accordion": false,
-            "accordion_icon": "caret",
-            "accordion_dividers": false,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "heading_preset": "h3",
-            "link_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+          "blocks": {
+            "text_ikPQnf": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3>Neura Details</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 10,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_BdzdjY": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Cada detalle que diseño está pensado para emocionar, para contar una historia y para convertir momentos especiales en recuerdos inolvidables.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
-        },
-        "menu_6jWwP4": {
-          "type": "menu",
-          "name": "t:names.menu",
-          "settings": {
-            "menu": "",
-            "heading": "About",
-            "menu_spacing": 12,
-            "show_as_accordion": false,
-            "accordion_icon": "caret",
-            "accordion_dividers": false,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "heading_preset": "h3",
-            "link_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+          "block_order": [
+            "text_ikPQnf",
+            "text_BdzdjY"
+          ]
         },
         "group_hAzkCn": {
           "type": "group",
@@ -167,9 +204,7 @@
         }
       },
       "block_order": [
-        "menu_8tJbUk",
-        "menu_jRmAQi",
-        "menu_6jWwP4",
+        "group_krqnLD",
         "group_hAzkCn"
       ],
       "name": "Footer",
