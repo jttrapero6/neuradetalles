@@ -53,11 +53,26 @@
         "gap": 32,
         "color_scheme": "",
         "padding-block-start": 40,
-        "padding-block-end": 80
+        "padding-block-end": 60
+      }
+    },
+    "formulario_contacto_iXV7F4": {
+      "type": "formulario-contacto",
+      "name": "Formulario de contacto",
+      "settings": {
+        "titulo": "",
+        "subtitulo": "",
+        "texto_boton": "Enviar mensaje",
+        "texto_enviado": "¡Mensaje enviado! Nos pondremos en contacto contigo pronto.",
+        "color_scheme": "",
+        "estilo_boton": "button",
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "formulario_contacto_iXV7F4"
   ]
 }
