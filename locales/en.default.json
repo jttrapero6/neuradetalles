@@ -367,5 +367,23 @@
       "default_title": "Default Title",
       "sticky_add_to_cart": "Quick add to cart bar"
     }
+  },
+  "sections": {
+    "formulario_contacto": {
+      "error_general": "Please check the form fields and try again.",
+      "nombre": "First name",
+      "nombre_placeholder": "First name",
+      "apellidos": "Last name",
+      "apellidos_placeholder": "Last name",
+      "email": "Email address",
+      "email_placeholder": "your@email.com",
+      "telefono": "Phone",
+      "telefono_placeholder": "+1 000 000 0000",
+      "presupuesto": "Estimated budget",
+      "presupuesto_placeholder": "E.g. €500 – €1,000",
+      "fecha": "Ideal date",
+      "mensaje": "Message",
+      "mensaje_placeholder": "Tell us how we can help you..."
+    }
   }
 }

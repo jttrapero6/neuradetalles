@@ -340,5 +340,23 @@
       "success_moderated": "Comentario publicado y a la espera de moderación",
       "success": "Comentario publicado"
     }
+  },
+  "sections": {
+    "formulario_contacto": {
+      "error_general": "Por favor, revisa los campos del formulario e inténtalo de nuevo.",
+      "nombre": "Nombre",
+      "nombre_placeholder": "Nombre",
+      "apellidos": "Apellidos",
+      "apellidos_placeholder": "Apellidos",
+      "email": "Correo electrónico",
+      "email_placeholder": "Correo electrónico",
+      "telefono": "Teléfono",
+      "telefono_placeholder": "Teléfono",
+      "presupuesto": "Presupuesto estimado",
+      "presupuesto_placeholder": "Presupuesto estimado",
+      "fecha": "Fecha ideal",
+      "mensaje": "Mensaje",
+      "mensaje_placeholder": "Cuéntanos en qué podemos ayudarte..."
+    }
   }
 }

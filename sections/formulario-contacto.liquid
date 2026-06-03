@@ -1,0 +1,375 @@
+
+{% assign form_id = section.id | prepend: 'FormularioContacto-' %}
+
+<section
+  class="formulario-contacto color-{{ section.settings.color_scheme }} section--page-width"
+  style="
+    padding-block-start: {{ section.settings.padding_top }}px;
+    padding-block-end: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="formulario-contacto__inner page-width">
+
+    {%- if section.settings.titulo != blank or section.settings.subtitulo != blank -%}
+      <div class="formulario-contacto__header">
+        {%- if section.settings.titulo != blank -%}
+          <h2 class="formulario-contacto__titulo">{{ section.settings.titulo }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subtitulo != blank -%}
+          <p class="formulario-contacto__subtitulo">{{ section.settings.subtitulo }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- form 'contact', id: form_id, class: 'formulario-contacto__form' -%}
+      <input type="hidden" name="contact[id]" value="{{ form_id }}">
+
+      {%- if form.errors and form.id == form_id -%}
+        <div class="formulario-contacto__mensaje formulario-contacto__mensaje--error" tabindex="-1" autofocus>
+          {{- 'icon-error.svg' | inline_asset_content -}}
+          <span>
+            {%- if form.errors contains 'email' -%}
+              {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}.
+            {%- else -%}
+              {{ 'sections.formulario_contacto.error_general' | t | default: 'Por favor, revisa los campos del formulario e inténtalo de nuevo.' }}
+            {%- endif -%}
+          </span>
+        </div>
+      {%- endif -%}
+
+      {%- if form.posted_successfully? and form.id == form_id -%}
+        <div class="formulario-contacto__mensaje formulario-contacto__mensaje--exito" tabindex="-1" autofocus>
+          {{- 'icon-checkmark.svg' | inline_asset_content -}}
+          <span>{{ section.settings.texto_enviado | default: '¡Mensaje enviado! Nos pondremos en contacto contigo pronto.' }}</span>
+        </div>
+      {%- else -%}
+
+        <div class="formulario-contacto__fila">
+          <div class="formulario-contacto__campo">
+            <input
+              type="text"
+              id="{{ form_id }}-nombre"
+              class="formulario-contacto__input"
+              name="contact[nombre]"
+              autocomplete="given-name"
+              required
+              value="{{ form['nombre'] | default: '' }}"
+              aria-label="{{ 'sections.formulario_contacto.nombre' | t }}"
+              placeholder="{{ 'sections.formulario_contacto.nombre_placeholder' | t }}"
+            >
+          </div>
+
+          <div class="formulario-contacto__campo">
+            <input
+              type="text"
+              id="{{ form_id }}-apellidos"
+              class="formulario-contacto__input"
+              name="contact[apellidos]"
+              autocomplete="family-name"
+              required
+              value="{{ form['apellidos'] | default: '' }}"
+              aria-label="{{ 'sections.formulario_contacto.apellidos' | t }}"
+              placeholder="{{ 'sections.formulario_contacto.apellidos_placeholder' | t }}"
+            >
+          </div>
+        </div>
+
+        <div class="formulario-contacto__fila">
+          <div class="formulario-contacto__campo">
+            <input
+              type="email"
+              id="{{ form_id }}-email"
+              class="formulario-contacto__input{% if form.errors contains 'email' and form.id == form_id %} formulario-contacto__input--error{% endif %}"
+              name="contact[email]"
+              autocomplete="email"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-required="true"
+              {% if form.errors contains 'email' and form.id == form_id %}
+                aria-invalid="true"
+              {% endif %}
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-label="{{ 'sections.formulario_contacto.email' | t }}"
+              placeholder="{{ 'sections.formulario_contacto.email_placeholder' | t }}"
+            >
+          </div>
+
+          <div class="formulario-contacto__campo">
+            <input
+              type="tel"
+              id="{{ form_id }}-telefono"
+              class="formulario-contacto__input"
+              name="contact[phone]"
+              autocomplete="tel"
+              pattern="[0-9+\-\s()]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+              aria-label="{{ 'sections.formulario_contacto.telefono' | t }}"
+              placeholder="{{ 'sections.formulario_contacto.telefono_placeholder' | t }}"
+            >
+          </div>
+        </div>
+
+        <div class="formulario-contacto__fila">
+          <div class="formulario-contacto__campo">
+            <input
+              type="text"
+              id="{{ form_id }}-presupuesto"
+              class="formulario-contacto__input"
+              name="contact[presupuesto_estimado]"
+              value="{{ form['presupuesto_estimado'] | default: '' }}"
+              aria-label="{{ 'sections.formulario_contacto.presupuesto' | t }}"
+              placeholder="{{ 'sections.formulario_contacto.presupuesto_placeholder' | t }}"
+            >
+          </div>
+
+          <div class="formulario-contacto__campo">
+            <input
+              type="date"
+              id="{{ form_id }}-fecha"
+              class="formulario-contacto__input formulario-contacto__input--date"
+              name="contact[fecha_ideal]"
+              value="{{ form['fecha_ideal'] | default: '' }}"
+              aria-label="{{ 'sections.formulario_contacto.fecha' | t }}"
+              min="{{ 'now' | date: '%Y-%m-%d' }}"
+            >
+          </div>
+        </div>
+
+        <div class="formulario-contacto__campo">
+          <textarea
+            id="{{ form_id }}-mensaje"
+            class="formulario-contacto__input formulario-contacto__input--textarea"
+            name="contact[body]"
+            rows="6"
+            required
+            aria-label="{{ 'sections.formulario_contacto.mensaje' | t }}"
+            placeholder="{{ 'sections.formulario_contacto.mensaje_placeholder' | t }}"
+          >{{- form.body -}}</textarea>
+        </div>
+
+        <div class="formulario-contacto__envio">
+          <button type="submit" class="button {{ section.settings.estilo_boton }}">
+            {{ section.settings.texto_boton | default: 'Enviar mensaje' }}
+          </button>
+        </div>
+
+      {%- endif -%}
+    {%- endform -%}
+
+  </div>
+</section>
+
+{% stylesheet %}
+  .formulario-contacto {
+    width: 100%;
+  }
+
+  .formulario-contacto__inner {
+    max-width: var(--page-width, 1200px);
+    margin-inline: auto;
+    padding-inline: var(--page-margin, 20px);
+  }
+
+  .formulario-contacto__header {
+    margin-block-end: 2rem;
+    text-align: center;
+  }
+
+  .formulario-contacto__titulo {
+    margin-block-end: 0.5rem;
+  }
+
+  .formulario-contacto__subtitulo {
+    opacity: 0.75;
+  }
+
+  .formulario-contacto__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md, 1rem);
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .formulario-contacto__fila {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md, 1rem);
+  }
+
+  @media screen and (min-width: 750px) {
+    .formulario-contacto__fila {
+      flex-direction: row;
+    }
+
+    .formulario-contacto__fila .formulario-contacto__campo {
+      flex: 1;
+    }
+  }
+
+  .formulario-contacto__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .formulario-contacto__input {
+    width: 100%;
+    color: var(--color-input-text);
+    background-color: var(--color-input-background);
+    border: var(--style-border-width-inputs, 1px) solid var(--color-input-border);
+    border-radius: var(--style-border-radius-inputs, 4px);
+    padding: var(--padding-lg, 0.75rem) var(--padding-xl, 1rem);
+    -webkit-font-smoothing: antialiased;
+    transition: border-color 0.2s;
+  }
+
+  .formulario-contacto__input:focus {
+    outline: none;
+    border-color: var(--color-input-text);
+  }
+
+  .formulario-contacto__input--error {
+    border-color: var(--color-error, #c0392b);
+  }
+
+  .formulario-contacto__input--textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+
+  .formulario-contacto__input--date {
+    color-scheme: light dark;
+  }
+
+  .formulario-contacto__envio {
+    display: flex;
+    justify-content: flex-start;
+    margin-block-start: 0.5rem;
+  }
+
+  .formulario-contacto__mensaje {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-xs, 0.5rem);
+    padding: 1rem;
+    border-radius: var(--style-border-radius-inputs, 4px);
+    font-size: 0.9375rem;
+  }
+
+  .formulario-contacto__mensaje svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-block-start: 0.0625rem;
+  }
+
+  .formulario-contacto__mensaje--error {
+    background-color: color-mix(in srgb, var(--color-error, #c0392b) 10%, transparent);
+    color: var(--color-error, #c0392b);
+    border: 1px solid color-mix(in srgb, var(--color-error, #c0392b) 30%, transparent);
+  }
+
+  .formulario-contacto__mensaje--exito {
+    background-color: color-mix(in srgb, var(--color-success, #27ae60) 10%, transparent);
+    color: var(--color-success, #27ae60);
+    border: 1px solid color-mix(in srgb, var(--color-success, #27ae60) 30%, transparent);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Formulario de contacto",
+  "tag": "div",
+  "class": "section-wrapper",
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Textos"
+    },
+    {
+      "type": "text",
+      "id": "titulo",
+      "label": "Título",
+      "default": "Contáctanos"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitulo",
+      "label": "Subtítulo",
+      "default": "Rellena el formulario y nos pondremos en contacto contigo lo antes posible."
+    },
+    {
+      "type": "text",
+      "id": "texto_boton",
+      "label": "Texto del botón",
+      "default": "Enviar mensaje"
+    },
+    {
+      "type": "text",
+      "id": "texto_enviado",
+      "label": "Mensaje de éxito",
+      "default": "¡Mensaje enviado! Nos pondremos en contacto contigo pronto."
+    },
+    {
+      "type": "header",
+      "content": "Apariencia"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de color",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "estilo_boton",
+      "label": "Estilo del botón",
+      "options": [
+        {
+          "value": "button",
+          "label": "Principal"
+        },
+        {
+          "value": "button-secondary",
+          "label": "Secundario"
+        }
+      ],
+      "default": "button"
+    },
+    {
+      "type": "header",
+      "content": "Espaciado"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacio superior",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacio inferior",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Formulario de contacto",
+      "category": "Formularios"
+    }
+  ]
+}
+{% endschema %}
