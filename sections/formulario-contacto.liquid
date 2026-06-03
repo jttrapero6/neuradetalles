@@ -22,9 +22,8 @@
     {%- endif -%}
 
     {%- form 'contact', id: form_id, class: 'formulario-contacto__form' -%}
-      <input type="hidden" name="contact[id]" value="{{ form_id }}">
 
-      {%- if form.errors and form.id == form_id -%}
+      {%- if form.errors -%}
         <div class="formulario-contacto__mensaje formulario-contacto__mensaje--error" tabindex="-1" autofocus>
           {{- 'icon-error.svg' | inline_asset_content -}}
           <span>
@@ -37,7 +36,7 @@
         </div>
       {%- endif -%}
 
-      {%- if form.posted_successfully? and form.id == form_id -%}
+      {%- if form.posted_successfully? -%}
         <div class="formulario-contacto__mensaje formulario-contacto__mensaje--exito" tabindex="-1" autofocus>
           {{- 'icon-checkmark.svg' | inline_asset_content -}}
           <span>{{ section.settings.texto_enviado | default: '¡Mensaje enviado! Nos pondremos en contacto contigo pronto.' }}</span>
