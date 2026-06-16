@@ -121,7 +121,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Descubre regalos personalizados y creados con cariño para cada ocación</p>",
+                    "text": "<p>Descubre regalos personalizados y creados con cariño para cada ocasión</p>",
                     "width": "fit-content",
                     "max_width": "none",
                     "alignment": "left",
