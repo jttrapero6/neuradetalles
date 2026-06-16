@@ -167,9 +167,9 @@
                 "pc_basic_option_space_above": 6,
                 "pc_basic_option_space_below": 10,
                 "pc_basic_option_space_inside": 10,
-                "pc_advanced_custom_css": "",
+                "pc_advanced_custom_css": ".product-information .product-customizer-options .option-type-checkbox_group ul input {\n    display: inline-block;\n}",
                 "pc_advanced_custom_js": "",
-                "pc_show_image_swatch_preview": true
+                "pc_show_image_swatch_preview": false
               }
             },
             "buy_buttons_eYQEYi": {
