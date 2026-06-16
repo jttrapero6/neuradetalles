@@ -165,8 +165,8 @@
                 "pc_basic_option_bolden": "none",
                 "pc_basic_option_width": 100,
                 "pc_basic_option_space_above": 0,
-                "pc_basic_option_space_below": 0,
-                "pc_basic_option_space_inside": 10,
+                "pc_basic_option_space_below": 10,
+                "pc_basic_option_space_inside": 0,
                 "pc_advanced_custom_css": "",
                 "pc_advanced_custom_js": "",
                 "pc_show_image_swatch_preview": false
