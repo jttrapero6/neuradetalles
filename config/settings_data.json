@@ -30,6 +30,7 @@
     "transition_to_main_product": true,
     "secondary_button_border_width": 0,
     "cart_type": "drawer",
+    "show_accelerated_checkout_buttons": false,
     "empty_cart_button_link": "shopify://collections",
     "drawer_color_scheme": "scheme-a899fd56-c0b3-4c6c-bb8d-c47d4e8054de",
     "drawer_border": "none",
